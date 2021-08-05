@@ -1,0 +1,48 @@
+<html>
+    <head>
+
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <h1>Adding Data</h1>
+
+        <div class="content">
+
+            <form id="addForm">
+            
+            <input type="text" name="Name" placeholder="Name">
+            <input tupe="text" name="ItemName" placeholder="Item Name">
+            <input tupe="text" name="Email" placeholder="Email Address">
+            <input tupe="text" name="Contact" placeholder="Contact No">
+            <button>Add</button>
+
+            </form>
+
+            <ul id="Adding-item"></ul>
+
+        </div>
+
+
+    <script>
+        
+        var firebaseConfig = {
+            apiKey: "AIzaSyA3mnFIc1c5olE0dS7OflvRLvqNYELx7Bg",
+            authDomain: "add-data-112e4.firebaseapp.com",
+            projectId: "add-data-112e4",
+            storageBucket: "add-data-112e4.appspot.com",
+            messagingSenderId: "575216647890",
+            appId: "1:575216647890:web:1248262e77fd52951ab70b",
+            measurementId: "G-JMPQS0LWVY"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig); 
+        const db = firebase.firestore()
+        db.setting({ timestampsInSnapshots: true })
+        </script>
+        <script src="app.js"></script>
+    </body>
+</html>
